@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-gray-100 text-gray-900;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center gap-4 px-6 py-4 cursor-pointer text-white text-lg transition-all;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors;
+  }
+}
